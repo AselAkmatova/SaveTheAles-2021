@@ -1,0 +1,135 @@
+@media (min-width: 671px) and (max-width: 1200px) {
+  /******************************************HEADER******************************************/
+
+  .header {
+    padding: 0 50px;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-menu-burger {
+    display: block;
+    position: relative;
+  }
+
+  .header-menu-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: absolute;
+    background: #ffbd14;
+    top: 0;
+    left: 0;
+    z-index: 20000;
+    padding: 20px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-menu__link:hover::before,
+  .header-menu__link:hover::after {
+    background-color: #8a1f0d;
+  }
+
+  .header-menu__link:hover {
+    color: #8a1f0d;
+  }
+
+  .header-menu-modal__close {
+    position: absolute;
+    top: 27px;
+    left: 55px;
+  }
+
+  .header-cart__quantity {
+    right: 95px;
+  }
+
+  /******************************************HOME******************************************/
+
+  .home-container {
+    top: 170px;
+    width: 65%;
+  }
+
+  .home-container__title {
+    font-size: 55px;
+    margin-bottom: 25px;
+  }
+
+  .home-carousel__slide-2 {
+    background-position: 70% 10%;
+  }
+
+  /******************************************DISHES******************************************/
+
+  .filter__item {
+    font-size: 20px;
+  }
+
+  /******************************************CART******************************************/
+
+  .cart-empty {
+    padding: 60px 40px;
+    height: 100vh;
+  }
+
+  .cart-top {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  .cart-top__title {
+    font-size: 34px;
+  }
+
+  .cart-top__text {
+    font-size: 22px;
+    width: 90%;
+  }
+
+  .order-nav__link,
+  .order-nav__link:hover {
+    font-size: 20px;
+  }
+
+  .order-nav__line {
+    display: none;
+  }
+
+  /******************************************CHECKOUT******************************************/
+  .checkout {
+    padding: 40px 40px;
+  }
+
+  /******************************************CONTACTS******************************************/
+
+  .contact-us {
+    gap: 50px;
+    height: 100%;
+    padding-bottom: 50px;
+  }
+
+  .contact-item__link {
+    font-size: 17px;
+  }
+
+  .feedback {
+    height: 100vh;
+  }
+
+  .feedback__title {
+    width: 100%;
+  }
+
+  .contacts__title {
+    margin-bottom: 30px;
+  }
+
+  .history-orders-list {
+    width: 70%;
+  }
+}

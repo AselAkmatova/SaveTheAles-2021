@@ -1,0 +1,425 @@
+{
+  "users": [
+    {
+      "token": "token_bhje73bkj38jlds9",
+      "data": {
+        "username": "admin",
+        "firstName": "John",
+        "age": 18
+      },
+      "auth": {
+        "username": "admin",
+        "password": "1234"
+      }
+    },
+    {
+      "auth": {
+        "username": "ooo",
+        "password": "555"
+      },
+      "data": {
+        "username": "ooo",
+        "firstName": "ooo",
+        "age": 55
+      },
+      "token": "token_o-ipKWWZy"
+    },
+    {
+      "auth": {
+        "username": "Asel",
+        "password": "2007"
+      },
+      "data": {
+        "username": "Asel"
+      },
+      "token": "token_RCxxdUo3q"
+    },
+    {
+      "auth": {
+        "username": "as",
+        "password": "as"
+      },
+      "data": {
+        "username": "as",
+        "firstName": "as"
+      },
+      "token": "token_E3R2ExCZT"
+    },
+    {
+      "auth": {
+        "username": "za",
+        "password": "za"
+      },
+      "data": {
+        "username": "za",
+        "firstName": "za"
+      },
+      "token": "token_YCBd2yn01"
+    },
+    {
+      "auth": {
+        "username": "Tim",
+        "password": "tim"
+      },
+      "data": {
+        "username": "Tim",
+        "firstName": "Tim"
+      },
+      "token": "token_AyzsKeefn"
+    }
+  ],
+  "eats_categories": [
+    {
+      "id": "4g4joeu70",
+      "name": "Десерты",
+      "img": "https://images.unsplash.com/photo-1554998171-89445e31c52b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1710&q=80"
+    },
+    {
+      "id": "41111kkd71",
+      "name": "Салаты",
+      "img": "https://images.unsplash.com/photo-1611143669185-af224c5e3252?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1790&q=80"
+    },
+    {
+      "id": "21hyGGDet2",
+      "name": "Пиво",
+      "img": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+    },
+    {
+      "id": "JDruhj47hf",
+      "name": "Горячие блюда",
+      "img": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+    }
+  ],
+  "eats_dishes": [
+    {
+      "id": "UYdjeu766",
+      "name": "Гренки с яйцом",
+      "img": "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+      "desc": "3 штуки",
+      "price": 125,
+      "categoryId": "4g4joeu70"
+    },
+    {
+      "id": "rtTRG7hH",
+      "name": "Овсяная каша с ягодами",
+      "img": "https://images.unsplash.com/photo-1587678711204-ca6d3d2f1f3b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80",
+      "desc": null,
+      "price": 200,
+      "categoryId": "4g4joeu70"
+    },
+    {
+      "id": "KKDyhdeju9",
+      "name": "Смузи боул",
+      "img": "https://images.unsplash.com/photo-1588199318353-9d947efbff64?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80",
+      "desc": "Любое растительное молоко на выбор",
+      "price": 270,
+      "categoryId": "4g4joeu70"
+    },
+    {
+      "id": "7djkhJJhgf",
+      "name": "Фруктовое ассорти",
+      "img": "https://images.unsplash.com/photo-1478144592103-25e218a04891?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1568&q=80",
+      "desc": null,
+      "price": 200,
+      "categoryId": "4g4joeu70"
+    },
+    {
+      "id": "764huhhfew",
+      "name": "Спагетти с грибами",
+      "img": "https://images.unsplash.com/photo-1603570416072-84068a0f1358?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+      "desc": null,
+      "price": 240,
+      "categoryId": "JDruhj47hf"
+    },
+    {
+      "id": "AqGiHdppe",
+      "name": "Стейк из семги",
+      "img": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+      "desc": null,
+      "price": 550,
+      "categoryId": "JDruhj47hf"
+    },
+    {
+      "id": "NNDjdyeLLDJ",
+      "name": "Фрикассе",
+      "img": "https://images.unsplash.com/photo-1564671165093-20688ff1fffa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80",
+      "desc": null,
+      "price": 300,
+      "categoryId": "JDruhj47hf"
+    },
+    {
+      "id": "JhduHG9we",
+      "name": "Рыба под тыквенным соусом",
+      "img": "https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80",
+      "desc": null,
+      "price": 540,
+      "categoryId": "JDruhj47hf"
+    },
+    {
+      "id": "NsloKJ87d",
+      "name": "Куриная грудка с овощами",
+      "img": "https://images.unsplash.com/photo-1572424117831-005b5e9b3ae4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80",
+      "desc": null,
+      "price": 400,
+      "categoryId": "JDruhj47hf"
+    },
+    {
+      "id": "Uddhey33h",
+      "name": "Томатный суп",
+      "img": "https://images.unsplash.com/photo-1578020190125-f4f7c18bc9cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      "desc": null,
+      "price": 150,
+      "categoryId": "21hyGGDet2"
+    },
+    {
+      "id": "keYU7ducccd",
+      "name": "Чечевичный суп",
+      "img": "https://images.unsplash.com/photo-1605909388460-74ec8b204127?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "desc": null,
+      "price": 180,
+      "categoryId": "21hyGGDet2"
+    },
+    {
+      "id": "POdbde93",
+      "name": "Французский сырный суп",
+      "img": "https://images.unsplash.com/photo-1602563388144-9a37442e6e42?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80",
+      "desc": null,
+      "price": 110,
+      "categoryId": "21hyGGDet2"
+    },
+    {
+      "id": "74HJhjkruJKD",
+      "name": "Веган боул (овощной)",
+      "img": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+      "desc": null,
+      "price": 200,
+      "categoryId": "41111kkd71"
+    },
+    {
+      "id": "Podneu83",
+      "name": "Цезарь",
+      "img": "https://images.unsplash.com/photo-1580013759032-c96505e24c1f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1125&q=80",
+      "desc": null,
+      "price": 280,
+      "categoryId": "41111kkd71"
+    },
+    {
+      "id": "HDrkjueiuj",
+      "name": "Греческий",
+      "img": "https://images.unsplash.com/photo-1612298697520-ba96a60412e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80",
+      "desc": null,
+      "price": 170,
+      "categoryId": "41111kkd71"
+    },
+    {
+      "id": "TDFEgetgf3",
+      "name": "Свежий салат с вяленными томатами",
+      "img": "https://images.unsplash.com/photo-1537785713284-0015ce8a145c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80",
+      "desc": null,
+      "price": 180,
+      "categoryId": "41111kkd71"
+    },
+    {
+      "id": "skoEHH74",
+      "name": "Пончики в глазури",
+      "img": "https://images.unsplash.com/photo-1556913396-7a3c459ef68e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1640&q=80",
+      "desc": null,
+      "price": 130,
+      "categoryId": "4g4joeu70"
+    },
+    {
+      "id": "37IuiejKKd",
+      "name": "Банановый кекс",
+      "img": "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80",
+      "desc": null,
+      "price": 80,
+      "categoryId": "4g4joeu70"
+    },
+    {
+      "id": "HuywGG6e3",
+      "name": "Яичница глазунья",
+      "img": "https://images.unsplash.com/photo-1594629490425-b85f054b39ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      "desc": "На выбор: с курицей, с беконом, с овощами или с грибами",
+      "price": 160,
+      "categoryId": "JDruhj47hf"
+    },
+    {
+      "id": "slhHGT73hdj",
+      "name": "Крем суп из шампиньонов",
+      "img": "https://images.unsplash.com/photo-1610725663727-08695a1ac3ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "desc": null,
+      "price": 200,
+      "categoryId": "21hyGGDet2"
+    },
+    {
+      "id": "LOEW&HDh4u",
+      "name": "Салат с курицей и рукколой",
+      "img": "https://images.unsplash.com/photo-1604909052743-94e838986d24?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80",
+      "desc": null,
+      "price": 220,
+      "categoryId": "41111kkd71"
+    },
+    {
+      "id": "HD74hjkH7D",
+      "name": "Зеленый салат",
+      "img": "https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=80",
+      "desc": null,
+      "price": 140,
+      "categoryId": "41111kkd71"
+    },
+    {
+      "id": "NDUEH74",
+      "name": "Сладкие блинчики",
+      "img": "https://images.unsplash.com/photo-1587314168485-3236d6710814?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1570&q=80",
+      "desc": null,
+      "price": 170,
+      "categoryId": "4g4joeu70"
+    },
+    {
+      "id": "Huhjke7367b",
+      "name": "Фруктово-ягодный сорбет",
+      "img": "https://images.unsplash.com/photo-1488900128323-21503983a07e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80",
+      "desc": "Малина, клубника, брусника, голубика, арбуз, дыня, апельсин",
+      "price": 120,
+      "categoryId": "4g4joeu70"
+    }
+  ],
+  "contacts": [
+    {
+      "email": "info@kg",
+      "phone": 999511,
+      "address": "Tynystanova"
+    }
+  ],
+  "order": [
+    {
+      "id": "vpXCt7UGf",
+      "clientName": "sssss",
+      "clientAddress": "ssss",
+      "clientTel": "0500-222-000",
+      "changeAmount": "444"
+    },
+    {
+      "id": "9ad8DwV3L",
+      "clientName": "Asel",
+      "clientAddress": "errrrr",
+      "clientTel": "0500-999-000",
+      "additionalInfo": "dfdfdf",
+      "changeAmount": "2000"
+    },
+    {
+      "id": "qqnmNEgno",
+      "clientName": "sssss"
+    },
+    {
+      "id": "aGrwmgesF",
+      "clientName": "Tom",
+      "clientAddress": "Gogol",
+      "clientTel": "0500-999-000",
+      "additionalInfo": "dddddd",
+      "date": "2021-10-16T18:50",
+      "changeAmount": "58888"
+    },
+    {
+      "id": "EjIyGeTgx",
+      "clientName": "Assss",
+      "clientAddress": "mmmmmmm",
+      "clientTel": "0500-999-000",
+      "additionalInfo": "dddddd",
+      "date": "2021-10-25T18:50",
+      "changeAmount": "5555"
+    },
+    {
+      "id": "HDa80uqkf",
+      "clientName": "Asel",
+      "token": "token_E3R2ExCZT",
+      "clientAddress": "ssss",
+      "clientTel": "0500-999-000",
+      "additionalInfo": "aaaaaa",
+      "dishes": "Гренки с яйцом*2; Овсяная каша с ягодами*5",
+      "date": "2021-10-21T21:08",
+      "changeAmount": "5000"
+    },
+    {
+      "id": "geDOilDbd",
+      "clientName": "Asel",
+      "token": "token_E3R2ExCZT",
+      "clientAddress": "Tokombaeva 19",
+      "clientTel": "0500-999-000",
+      "additionalInfo": "dct looooo",
+      "dishes": "Гренки с яйцом*1; Овсяная каша с ягодами*1; Смузи боул*1; Томатный суп*1; Чечевичный суп*1",
+      "date": "2021-11-06T21:20",
+      "changeAmount": "1500"
+    },
+    {
+      "id": "tpWmdOHzx",
+      "clientName": "Asel",
+      "token": "token_E3R2ExCZT",
+      "clientAddress": "Tokombaeva 19",
+      "clientTel": "0500-999-000",
+      "dishes": "Овсяная каша с ягодами*3; Томатный суп*1; Чечевичный суп*1",
+      "date": "2021-10-31T21:20",
+      "changeAmount": "3000"
+    },
+    {
+      "id": "KgVMsxR1a",
+      "clientName": "Asel",
+      "token": "token_E3R2ExCZT",
+      "clientAddress": "Boeee",
+      "clientTel": "0500-999-000",
+      "dishes": "Овсяная каша с ягодами*3; Томатный суп*1; Чечевичный суп*1; Гренки с яйцом*1; Смузи боул*1",
+      "date": "2021-10-24T21:21",
+      "changeAmount": "2000"
+    },
+    {
+      "id": "xLhzo9dr_",
+      "clientName": "Tim",
+      "token": "token_AyzsKeefn",
+      "clientAddress": "new york",
+      "clientTel": "0500-999-000",
+      "dishes": "Гренки с яйцом*1; Овсяная каша с ягодами*1",
+      "date": "2021-10-28T21:37",
+      "changeAmount": "5000"
+    },
+    {
+      "id": "_L07Jhv1y",
+      "clientName": "Zaza",
+      "token": "token_YCBd2yn01",
+      "clientAddress": "Gogol",
+      "clientTel": "0500-999-000",
+      "dishes": "Гренки с яйцом*1",
+      "date": "2021-10-29T21:40",
+      "changeAmount": "500"
+    },
+    {
+      "id": "IZZj50045",
+      "clientName": "Asel",
+      "clientAddress": "ssss",
+      "clientTel": "0500-999-000",
+      "dishes": "Гренки с яйцом*1; Овсяная каша с ягодами*3; Смузи боул*1",
+      "date": "2021-10-19T22:58",
+      "changeAmount": "5000"
+    },
+    {
+      "id": "1SK2-z4e-",
+      "clientName": "Kim",
+      "clientAddress": "eee",
+      "clientTel": "0500-999-000",
+      "additionalInfo": "ddd",
+      "dishes": "Гренки с яйцом*1; Овсяная каша с ягодами*3; Смузи боул*1; Веган боул (овощной)*1",
+      "date": "2021-10-24T22:00",
+      "changeAmount": "5000"
+    },
+    {
+      "id": "c5kHStW3_",
+      "clientName": "lllll",
+      "token": "token_E3R2ExCZT",
+      "clientAddress": "llll",
+      "clientTel": "0550-000-000",
+      "additionalInfo": "gg",
+      "dishes": "Гренки с яйцом*4; Овсяная каша с ягодами*1; Смузи боул*1",
+      "date": "2021-12-02T18:21",
+      "changeAmount": "2000"
+    }
+  ]
+}
