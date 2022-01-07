@@ -7,6 +7,7 @@ const auth = require("./routes/auth");
 const eats = require("./routes/eats");
 const order = require("./routes/order");
 const contacts = require("./routes/contacts");
+const booktable = require("./routes/booktable");
 const db = require("./db");
 
 app.use(cors());
@@ -26,6 +27,8 @@ app.get("/contacts", contacts.getContacts);
 app.get("/order", order.getAll);
 app.get("/order/detail/:token", order.getItem);
 app.post("/order/create", order.createNew);
+
+app.post("/booktable", booktable.createNew);
 
 app.listen(port, () =>
   console.log(`App listening at http://localhost:${port}`)

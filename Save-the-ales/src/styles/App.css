@@ -834,6 +834,11 @@ small {
   fill: #ffbd14;
 }
 
+.signup__success {
+  height: 100vh;
+  text-align: center;
+}
+
 /******************************************PROFILE******************************************/
 
 .profile {

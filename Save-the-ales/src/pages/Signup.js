@@ -38,7 +38,7 @@ export default function Signup() {
       <h2 className="signup__title">Регистрация</h2>
 
       {signedUp ? (
-        <h2>Вы успешно зарегистрировались</h2>
+        <h2 className="signup__success">Вы успешно зарегистрировались</h2>
       ) : (
         <Form
           className="signup__form"

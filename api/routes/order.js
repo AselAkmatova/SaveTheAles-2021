@@ -40,18 +40,11 @@ const createNew = (req, res) => {
     return error(res, 400, `${invalid.join(", ")} is not valid key`);
   }
 
-  // if (!clientName) return error(res, 400, "name attribute is required");
-  // if (!clientAddress) return error(res, 400, "address attribute is required");
-  // if (!clientTel) return error(res, 400, "tel attribute is required");
-  // if (!orderedDish) return error(res, 400, "orderedDish attribute is required");
-  // if (!cashAmount) return error(res, 400, "cashAmount attribute is required");
-
-  // if (typeof clientName !== "string")
-  //   return error(res, 400, "name attribute should be type `string`");
-  // if (typeof cashAmount !== "number")
-  //   return error(res, 400, "cashAmount attribute should be type `number`");
-  // if (typeof clientTel !== "number")
-  //   return error(res, 400, "cost attribute should be type `number`");
+  if (!clientName) return error(res, 400, "name attribute is required");
+  if (!clientAddress) return error(res, 400, "address attribute is required");
+  if (!clientTel) return error(res, 400, "tel attribute is required");
+  if (!dishes) return error(res, 400, "dishes attribute is required");
+  if (!changeAmount) return error(res, 400, "cashAmount attribute is required");
 
   const newItem = {
     id: shortid.generate(),

@@ -66,6 +66,50 @@
         "firstName": "Tim"
       },
       "token": "token_AyzsKeefn"
+    },
+    {
+      "auth": {
+        "username": "mark",
+        "password": "123"
+      },
+      "data": {
+        "username": "mark",
+        "firstName": "mark"
+      },
+      "token": "token_8GVBMyqFZ"
+    },
+    {
+      "auth": {
+        "username": "gulnara",
+        "password": "123"
+      },
+      "data": {
+        "username": "gulnara",
+        "firstName": "gulnara"
+      },
+      "token": "token_nz0MMYNPK"
+    },
+    {
+      "auth": {
+        "username": "aliya",
+        "password": "123"
+      },
+      "data": {
+        "username": "aliya",
+        "firstName": "aliya"
+      },
+      "token": "token_ao7nwf79Y"
+    },
+    {
+      "auth": {
+        "username": "aidai",
+        "password": "123"
+      },
+      "data": {
+        "username": "aidai",
+        "firstName": "aidai"
+      },
+      "token": "token_klgGaeEiZ"
     }
   ],
   "eats_categories": [
@@ -419,6 +463,38 @@
       "additionalInfo": "gg",
       "dishes": "Гренки с яйцом*4; Овсяная каша с ягодами*1; Смузи боул*1",
       "date": "2021-12-02T18:21",
+      "changeAmount": "2000"
+    },
+    {
+      "id": "i0XNezmDe",
+      "clientName": "Mark",
+      "token": "token_8GVBMyqFZ",
+      "clientAddress": "Bishkek",
+      "clientTel": "0500-555-555",
+      "additionalInfo": "bbmnn",
+      "dishes": "Гренки с яйцом*1; Овсяная каша с ягодами*3",
+      "date": "2021-12-25T18:37",
+      "changeAmount": "8000"
+    },
+    {
+      "id": "odNPNWdZz",
+      "clientName": "asel",
+      "clientAddress": "karabalta",
+      "clientTel": "0500-555-555",
+      "additionalInfo": "ghhhgh",
+      "dishes": "Гренки с яйцом*6; Овсяная каша с ягодами*7; Чечевичный суп*1",
+      "date": "2022-01-08T20:14",
+      "changeAmount": "2700"
+    },
+    {
+      "id": "UG6eYmeJy",
+      "clientName": "Mark",
+      "token": "token_nz0MMYNPK",
+      "clientAddress": "karabalta",
+      "clientTel": "0550-000-000",
+      "additionalInfo": "ghh",
+      "dishes": "Гренки с яйцом*1; Овсяная каша с ягодами*1; Смузи боул*2",
+      "date": "2022-01-07T17:17",
       "changeAmount": "2000"
     }
   ]
