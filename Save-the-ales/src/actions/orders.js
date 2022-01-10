@@ -5,7 +5,7 @@ export const fetchOrders = (token) => (dispatch) => {
     type: ORDERS_FETCH_START,
   });
 
-  fetch(`http://localhost:1717/order/detail/${token}`)
+  fetch(`https://save-the-ales.herokuapp.com/order/detail/${token}`)
     .then((r) => r.json())
     .then((data) =>
       dispatch({

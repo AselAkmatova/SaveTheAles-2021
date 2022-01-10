@@ -4,7 +4,7 @@ export const fetchDishes = () => (dispatch) => {
   dispatch({
     type: DISHES_FETCH_START,
   });
-  fetch("http://localhost:1717/eats/dishes")
+  fetch("https://save-the-ales.herokuapp.com/eats/dishes")
     .then((r) => r.json())
     .then((data) => {
       dispatch({

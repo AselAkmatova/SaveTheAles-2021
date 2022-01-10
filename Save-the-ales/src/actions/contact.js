@@ -9,7 +9,7 @@ export const fetchContacts = () => (dispatch) => {
     type: CONTACTS_FETCH_START,
   });
 
-  fetch("http://localhost:1717/contacts")
+  fetch("https://save-the-ales.herokuapp.com/contacts")
     .then((r) => r.json())
     .then((data) => {
       dispatch({

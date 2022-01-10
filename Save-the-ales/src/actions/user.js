@@ -9,7 +9,7 @@ export const loggingOut = () => (dispatch) => {
 };
 
 export const fetchSignin = (form) => (dispatch) => {
-  fetch("http://localhost:1717/signin", {
+  fetch("https://save-the-ales.herokuapp.com/signin", {
     method: "POST",
     body: JSON.stringify(form),
     headers: { "Content-Type": "application/json" },
@@ -30,7 +30,7 @@ export const fetchSignin = (form) => (dispatch) => {
 };
 
 export const fetchSignUp = (form) => (dispatch) => {
-  fetch("http://localhost:1717/signup", {
+  fetch("https://save-the-ales.herokuapp.com/signup", {
     method: "POST",
     body: JSON.stringify(form),
     headers: { "Content-Type": "application/json" },

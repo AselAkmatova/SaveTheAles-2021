@@ -9,7 +9,7 @@ export const fetchCategories = () => (dispatch) => {
     type: CATEGORIES_FETCH_START,
   });
 
-  fetch("http://localhost:1717/eats/categories")
+  fetch("https://save-the-ales.herokuapp.com/eats/categories")
     .then((r) => r.json())
     .then((data) =>
       dispatch({

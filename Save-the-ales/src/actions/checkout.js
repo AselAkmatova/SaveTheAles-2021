@@ -1,7 +1,7 @@
 import { SET_CHECKOUT, CHECKOUT_ERROR } from "./types";
 
 export const fetchCheckout = (form) => (dispatch) => {
-  fetch("http://localhost:1717/order/create", {
+  fetch("http://https://save-the-ales.herokuapp.com/order/create", {
     method: "POST",
     body: JSON.stringify(form),
     headers: { "Content-Type": "application/json" },
