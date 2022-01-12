@@ -19,23 +19,24 @@
     flex-direction: column;
     gap: 25px;
     position: absolute;
-    background: #ffbd14;
+    background: var(--hl-color);
     top: 0;
     left: 0;
     z-index: 20000;
     padding: 20px;
     height: 100%;
     align-items: center;
+    padding-left: 20px;
     justify-content: center;
   }
 
   .header-menu__link:hover::before,
   .header-menu__link:hover::after {
-    background-color: #8a1f0d;
+    background-color: var(--cart-color);
   }
 
   .header-menu__link:hover {
-    color: #8a1f0d;
+    color: var(--cart-color);
   }
 
   .header-menu-modal__close {
@@ -51,12 +52,14 @@
   /******************************************HOME******************************************/
 
   .home-container {
-    top: 170px;
-    width: 65%;
+    width: 70%;
   }
 
   .home-container__title {
-    font-size: 55px;
+    font-size: 58px;
+    margin-bottom: 25px;
+  }
+  .home-container__subtitle {
     margin-bottom: 25px;
   }
 

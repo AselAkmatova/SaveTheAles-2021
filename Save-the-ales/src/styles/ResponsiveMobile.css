@@ -9,17 +9,13 @@
     display: none;
   }
 
-  .header-logo {
-    padding: 0px;
-  }
-
   .header-menu-burger {
     display: block;
     position: relative;
   }
 
   .header-icons {
-    gap: 2px;
+    gap: 5px;
   }
 
   .header-menu-modal {
@@ -27,23 +23,26 @@
     flex-direction: column;
     gap: 25px;
     position: absolute;
-    background-color: #ffbd14;
+    background-color: var(--hl-color);
     top: 0;
     left: 0;
     z-index: 20000;
-    padding: 20px;
-    height: 100%;
+    width: 50%;
+    height: 100vh;
     align-items: center;
     justify-content: center;
+  }
+  .header-menu__link {
+    text-align: center;
   }
 
   .header-menu__link:after,
   .header-menu__link:before {
-    background-color: #8a1f0d;
+    background-color: var(--cart-color);
   }
 
   .header-menu__link:hover {
-    color: #8a1f0d;
+    color: var(--cart-color);
   }
 
   .header-menu-modal__close {
@@ -53,24 +52,32 @@
   }
 
   .header-cart__quantity {
-    right: 35px;
+    right: 37px;
   }
 
   /******************************************HOME******************************************/
 
   .home-container {
-    left: 50px;
-    width: 50%;
+    width: 80%;
+    display: block;
+    left: 10%;
   }
 
   .home-container__title {
-    font-weight: 500;
-    font-size: 45px;
-    margin-bottom: 35px;
+    font-size: 44px;
+    text-align: center;
   }
 
   .home-container__subtitle {
-    display: none;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .home-container__btn {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 190px;
   }
 
   .home-container__btn,
@@ -133,7 +140,7 @@
   }
 
   .dishes__no-item-text {
-    color: #fff;
+    color: var(--text-color);
     width: 90%;
     height: 100vh;
   }
@@ -299,7 +306,7 @@
     flex-direction: column;
     gap: 25px;
     position: absolute;
-    background-color: #ffbd14;
+    background-color: var(--hl-color);
     top: 0;
     left: 0;
     z-index: 20000;
@@ -325,11 +332,11 @@
 
   .header-menu__link:after,
   .header-menu__link:before {
-    background-color: #8a1f0d;
+    background-color: var(--cart-color);
   }
 
   .header-menu__link:hover {
-    color: #8a1f0d;
+    color: var(--cart-color);
   }
 
   .header-menu-modal__close {
@@ -345,25 +352,31 @@
   /******************************************HOME******************************************/
 
   .home-container {
-    top: 150px;
-    left: 20px;
-    width: 55%;
+    width: 90%;
+    display: block;
+    left: 5%;
   }
 
   .home-container__title {
-    font-weight: 500;
-    font-size: 35px;
-    margin-bottom: 35px;
+    font-size: 40px;
+    text-align: center;
   }
 
   .home-container__subtitle {
-    display: none;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .home-container__btn {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 190px;
   }
 
   .home-container__btn,
   .cart-empty__btn {
-    font-size: 18px;
-    padding: 10px;
+    font-size: 20px;
   }
 
   .home-carousel__slide-1 {
@@ -422,7 +435,7 @@
   }
 
   .dishes__no-item-text {
-    color: #fff;
+    color: var(text-color);
     width: 90%;
     height: 100vh;
   }
