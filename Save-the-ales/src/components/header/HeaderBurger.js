@@ -13,6 +13,10 @@ export default function HeaderBurger() {
     setShowMenu(false);
   };
 
+  let handleLinkClick = () => {
+    setShowMenu(false);
+  };
+
   return (
     <>
       <List
@@ -29,7 +33,7 @@ export default function HeaderBurger() {
             size={25}
             color="black"
           />
-          <HeaderMenu />
+          <HeaderMenu handleLinkClick={handleLinkClick} />
         </nav>
       )}
     </>
