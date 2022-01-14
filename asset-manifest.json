@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/SaveTheAles-2021/static/css/main.3c1325e3.chunk.css",
-    "main.js": "/SaveTheAles-2021/static/js/main.3bdda697.chunk.js",
-    "main.js.map": "/SaveTheAles-2021/static/js/main.3bdda697.chunk.js.map",
+    "main.css": "/SaveTheAles-2021/static/css/main.8352ab30.chunk.css",
+    "main.js": "/SaveTheAles-2021/static/js/main.709a4ad1.chunk.js",
+    "main.js.map": "/SaveTheAles-2021/static/js/main.709a4ad1.chunk.js.map",
     "runtime-main.js": "/SaveTheAles-2021/static/js/runtime-main.ebf0fd80.js",
     "runtime-main.js.map": "/SaveTheAles-2021/static/js/runtime-main.ebf0fd80.js.map",
     "static/css/2.076f902a.chunk.css": "/SaveTheAles-2021/static/css/2.076f902a.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.f905e788.chunk.js.map": "/SaveTheAles-2021/static/js/2.f905e788.chunk.js.map",
     "index.html": "/SaveTheAles-2021/index.html",
     "static/css/2.076f902a.chunk.css.map": "/SaveTheAles-2021/static/css/2.076f902a.chunk.css.map",
-    "static/css/main.3c1325e3.chunk.css.map": "/SaveTheAles-2021/static/css/main.3c1325e3.chunk.css.map",
+    "static/css/main.8352ab30.chunk.css.map": "/SaveTheAles-2021/static/css/main.8352ab30.chunk.css.map",
     "static/js/2.f905e788.chunk.js.LICENSE.txt": "/SaveTheAles-2021/static/js/2.f905e788.chunk.js.LICENSE.txt",
     "static/media/about-2.a268e332.jpg": "/SaveTheAles-2021/static/media/about-2.a268e332.jpg",
     "static/media/about-3.03b954f6.jpg": "/SaveTheAles-2021/static/media/about-3.03b954f6.jpg",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.ebf0fd80.js",
     "static/css/2.076f902a.chunk.css",
     "static/js/2.f905e788.chunk.js",
-    "static/css/main.3c1325e3.chunk.css",
-    "static/js/main.3bdda697.chunk.js"
+    "static/css/main.8352ab30.chunk.css",
+    "static/js/main.709a4ad1.chunk.js"
   ]
 }
