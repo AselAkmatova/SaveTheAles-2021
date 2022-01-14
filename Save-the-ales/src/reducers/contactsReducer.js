@@ -26,7 +26,7 @@ export default function contactsReducer(state = initialState, action) {
     case CONTACTS_FETCH_END:
       return {
         ...state,
-        loading: false,
+        loading: true,
       };
 
     default:

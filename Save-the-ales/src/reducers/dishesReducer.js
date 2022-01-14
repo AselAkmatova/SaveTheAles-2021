@@ -14,6 +14,7 @@ export default function dishesReducer(state = initialState, action) {
       return {
         ...state,
         dishes: action.payload,
+        loading: false,
       };
     case DISHES_FETCH_START:
       return {
@@ -24,7 +25,7 @@ export default function dishesReducer(state = initialState, action) {
     case DISHES_FETCH_END:
       return {
         ...state,
-        loading: false,
+        loading: true,
       };
 
     default:
