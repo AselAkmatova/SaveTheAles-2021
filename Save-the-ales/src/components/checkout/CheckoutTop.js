@@ -7,19 +7,18 @@ export default function CheckoutTop() {
       <div className="cart__cart-top cart-top">
         <CartTopText />
         <nav className="cart-top__order-nav order-nav">
-          <button className="order-nav__btn">
-            <Link className="order-nav__link" to={`/dishes`}>
-              Вернуться в меню
-            </Link>
-          </button>
+          <Link className="order-nav__link" to={`/dishes`}>
+            Вернуться в меню
+          </Link>
+
           <span className="order-nav__line">-----------------------</span>
-          <button className="order-nav__btn">
-            <Link className="order-nav__link" to={`/cart`}>
-              Корзина
-            </Link>
-          </button>
+
+          <Link className="order-nav__link" to={`/cart`}>
+            Корзина
+          </Link>
+
           <span className="order-nav__line">-----------------------</span>
-          <button className="order-nav__btn" disabled>
+          <button className="order-nav__link" disabled>
             Оформить заказ
           </button>
         </nav>

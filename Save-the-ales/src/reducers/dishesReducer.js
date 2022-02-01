@@ -1,8 +1,4 @@
-import {
-  SET_DISHES,
-  DISHES_FETCH_END,
-  DISHES_FETCH_START,
-} from "../actions/types";
+import { SET_DISHES } from "../actions/types";
 
 const initialState = {
   dishes: [],
@@ -15,17 +11,6 @@ export default function dishesReducer(state = initialState, action) {
         ...state,
         dishes: action.payload,
         loading: false,
-      };
-    case DISHES_FETCH_START:
-      return {
-        ...state,
-        loading: true,
-      };
-
-    case DISHES_FETCH_END:
-      return {
-        ...state,
-        loading: true,
       };
 
     default:

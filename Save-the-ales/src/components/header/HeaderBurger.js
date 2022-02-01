@@ -26,7 +26,7 @@ export default function HeaderBurger() {
         className="header-menu-burger"
       />
       {showMenu && (
-        <nav className="header-menu-modal">
+        <div className="header-menu-modal">
           <XLg
             className="header-menu-modal__close"
             onClick={handleCloseMenu}
@@ -34,7 +34,7 @@ export default function HeaderBurger() {
             color="black"
           />
           <HeaderMenu handleLinkClick={handleLinkClick} />
-        </nav>
+        </div>
       )}
     </>
   );

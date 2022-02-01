@@ -1,14 +1,6 @@
-import {
-  SET_CATEGORIES,
-  CATEGORIES_FETCH_START,
-  CATEGORIES_FETCH_END,
-} from "./types";
+import { SET_CATEGORIES } from "./types";
 
 export const fetchCategories = () => (dispatch) => {
-  dispatch({
-    type: CATEGORIES_FETCH_START,
-  });
-
   fetch("https://save-the-ales.herokuapp.com/eats/categories")
     .then((r) => r.json())
     .then((data) =>
@@ -17,8 +9,4 @@ export const fetchCategories = () => (dispatch) => {
         payload: data,
       })
     );
-
-  dispatch({
-    type: CATEGORIES_FETCH_END,
-  });
 };

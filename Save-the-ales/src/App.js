@@ -1,6 +1,5 @@
-import "./styles/App.css";
-import "./styles/ResponsiveMobile.css";
-import "./styles/ResponsiveTablet.css";
+import "./styles/App.scss";
+import "./styles/Responsive.scss";
 import Header from "./components/header/Header";
 import About from "./pages/About";
 import Home from "./pages/Home";

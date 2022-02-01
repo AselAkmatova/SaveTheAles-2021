@@ -20,13 +20,15 @@ export default function Home() {
           nextLabel=""
           prevLabel=""
           prevIcon=""
-          fade
+          nextIcon=""
+          controls={false}
+          fade={true}
         >
           <Carousel.Item>
-            <div className="home-carousel__slide-1"></div>
+            <div className="home-carousel__slide home-carousel__slide_one"></div>
           </Carousel.Item>
           <Carousel.Item>
-            <div className="home-carousel__slide-2"></div>
+            <div className="home-carousel__slide home-carousel__slide_two"></div>
           </Carousel.Item>
         </Carousel>
       </main>

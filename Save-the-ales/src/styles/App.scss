@@ -1,0 +1,635 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+@import url(https://fonts.googleapis.com/css2?family=Lobster&display=swap);
+@import "Helper";
+
+/******************************************HEADER******************************************/
+.header {
+  width: 100%;
+  height: 80px;
+  padding: 0 80px;
+  @include flex-row-space-bw;
+  background-color: $text-color;
+
+  .header-logo {
+    h1 {
+      padding: 8px 10px 8px 12px;
+      font-size: 40px;
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      color: $text-color;
+      background-color: $primary-color;
+      letter-spacing: 0.18em;
+      line-height: 40px;
+
+      @include header-logo;
+    }
+  }
+
+  .header-menu {
+    &__list {
+      display: flex;
+
+      li:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+
+    &__link {
+      position: relative;
+      text-transform: capitalize;
+      font-size: 20px;
+      color: $primary-color;
+
+      @include header-link;
+    }
+  }
+
+  .header-menu-burger,
+  .header-menu-modal {
+    display: none;
+  }
+
+  .header-icons {
+    display: flex;
+
+    svg:hover {
+      fill: $hl-color;
+    }
+
+    div:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    .header-cart__quantity {
+      position: absolute;
+      top: 15px;
+      right: 125px;
+      padding: 0 6px;
+      font-size: 12px;
+      font-weight: bold;
+      background-color: #d43215;
+      color: $text-color;
+      border-radius: 55px;
+    }
+  }
+}
+
+/******************************************HOME******************************************/
+.home {
+  .home-container {
+    position: absolute;
+    top: 25vh;
+    left: 80px;
+    max-width: 650px;
+    margin: auto 0;
+    z-index: 100;
+    display: block;
+
+    &__title {
+      font-weight: 700;
+      font-size: 68px;
+      margin-bottom: 30px;
+    }
+
+    &__subtitle {
+      font-size: 46px;
+      margin-bottom: 30px;
+    }
+
+    &__btn {
+      @include cart-btn();
+    }
+  }
+
+  .home-carousel {
+    &__slide_one {
+      background: url("../images/main-1.jpg");
+    }
+
+    &__slide_two {
+      background: url("../images/main-2.jpg");
+    }
+    &__slide {
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .active.carousel-item,
+    .carousel-item,
+    .carousel-inner {
+      width: 100%;
+      height: calc(100vh - 80px);
+    }
+  }
+}
+
+/******************************************ABOUT******************************************/
+.about {
+  @include page();
+  .about__title {
+    @include page-title();
+  }
+
+  .about-content {
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+    padding: 30px;
+    line-height: 170%;
+    border-top: 1px solid $hl-color;
+    border-bottom: 1px solid $hl-color;
+  }
+
+  &__quote {
+    width: 100%;
+    text-align: center;
+    font-family: "Lobster", cursive;
+    font-size: 28px;
+    color: $hl-color;
+  }
+
+  &__about-photos {
+    width: 100%;
+    @include flex-row-center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    .about-photos__img {
+      width: 280px;
+      margin: 0 10px 10px 0;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+      }
+    }
+  }
+}
+
+/******************************************DISHES******************************************/
+.menu {
+  @include page();
+
+  &__title {
+    @include page-title;
+  }
+
+  &__filter {
+    display: flex;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+
+    .filter__item {
+      margin-right: 20px;
+      margin-bottom: 20px;
+      padding: 8px 16px;
+      font-size: 18px;
+      text-transform: capitalize;
+      border: none;
+      border-radius: 30px;
+      background: $text-color;
+      &:hover {
+        background: $hl-color;
+      }
+    }
+  }
+
+  &__dishes {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+    flex-flow: wrap;
+
+    &:hover {
+      .dish {
+        transform: scale(0.9);
+      }
+    }
+
+    .dish {
+      @include card();
+
+      &__title {
+        padding-left: 12px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      &__image {
+        @include card-image();
+      }
+
+      .dish-info {
+        @include card-info();
+        &__price {
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        &__btn {
+          width: 133px;
+          height: 35px;
+          background-color: $hl-color;
+          border: none;
+          border-radius: 6px;
+          font-weight: 500;
+
+          &:hover {
+            -webkit-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out;
+            background-color: $hover-color;
+            color: $text-color;
+          }
+        }
+
+        .dish-info__btn_selected {
+          background-color: $green-color;
+          z-index: 200;
+          position: absolute;
+          right: 12px;
+          color: $text-color;
+          &:hover {
+            background-color: $green-color;
+          }
+        }
+      }
+    }
+  }
+
+  .loading {
+    transform: scale(1.5);
+    transition: 1s ease-in;
+    animation: rotate 5s infinite;
+    margin: 10% auto;
+  }
+
+  @keyframes rotate {
+    50% {
+      transform: rotate(270deg);
+    }
+  }
+}
+
+/******************************************CART******************************************/
+.cart {
+  @include page();
+  @include cart-top();
+  &__list {
+    @include flex-row-center;
+    width: 100%;
+    flex-flow: wrap;
+    margin-bottom: 20px;
+
+    .cart-item {
+      @include card;
+
+      &__image {
+        @include card-image();
+      }
+      &__title {
+        padding-left: 10px;
+        font-weight: 500;
+      }
+      .cart-info {
+        @include card-info();
+        font-weight: 500;
+
+        &__quantity {
+          @include flex-row-space-bw;
+          width: 90px;
+          padding: 5px;
+          background: $green-color;
+          border-radius: 6px;
+        }
+        &__price {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  &__total-price {
+    text-transform: uppercase;
+    color: $hl-color;
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.cart-empty {
+  @include page();
+  @include flex-colomn;
+
+  .cart-empty__title {
+    @include page-title;
+  }
+  .cart-empty__btn {
+    @include cart-btn();
+  }
+}
+
+/******************************************CHECKOUT******************************************/
+.checkout {
+  @include page();
+  @include cart-top();
+
+  small {
+    color: $hl-color;
+  }
+
+  .checkout-btn {
+    @include form-btn;
+  }
+
+  .checkout-form-top {
+    @include flex-row-space-bw;
+    width: 100%;
+    & > div {
+      width: 45%;
+    }
+  }
+  .checkout-form-bottom {
+    @include flex-row-space-bw;
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid $text-color;
+    border-bottom: 1px solid $text-color;
+    & > div {
+      width: 45%;
+    }
+
+    p {
+      color: $hl-color;
+    }
+  }
+  .checkout-success {
+    text-align: center;
+    h2 {
+      color: $hl-color;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/******************************************BOOK TABLE******************************************/
+.book-table {
+  @include page;
+
+  &__title {
+    @include page-title;
+  }
+
+  &__form {
+    @include flex-colomn;
+    width: 45%;
+    margin: 0 auto;
+    & > .form-group {
+      width: 100%;
+    }
+    & small {
+      color: $hl-color;
+    }
+  }
+
+  &__btn {
+    @include form-btn;
+  }
+
+  .book-table-success {
+    text-align: center;
+    h2 {
+      color: $hl-color;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/******************************************CONTACTS******************************************/
+.contact-us {
+  @include page;
+
+  &__title {
+    @include page-title;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    .contacts {
+      width: 40%;
+      margin-right: 40px;
+
+      &__list {
+        border-bottom: 1px solid #dad3c3;
+        margin-bottom: 30px;
+
+        .contact {
+          @include flex-row-center;
+          margin-bottom: 20px;
+          &:hover {
+            svg {
+              fill: $hl-color;
+            }
+            a {
+              color: $hl-color;
+            }
+          }
+          svg {
+            margin-right: 10px;
+          }
+          &__link {
+            display: block;
+            color: $text-color;
+            font-size: 18px;
+          }
+        }
+      }
+
+      .social {
+        svg:hover {
+          fill: $hl-color;
+        }
+        &__title {
+          text-align: center;
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
+        &__icons {
+          @include flex-row-center;
+          a:not(:last-child) {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+
+    .feedback {
+      width: 60%;
+
+      small {
+        color: $hl-color;
+      }
+
+      & > .form-group {
+        width: 80%;
+      }
+
+      &__btn {
+        @include form-btn;
+      }
+    }
+    .feedback-success {
+      color: $hl-color;
+      font-size: 24px;
+      text-align: center;
+      margin: 20px auto 60px;
+    }
+  }
+}
+
+/******************************************SIGN IN/UP******************************************/
+.signin {
+  @include page;
+
+  &__title {
+    @include page-title;
+  }
+
+  &__form {
+    @include flex-colomn;
+  }
+
+  &__btn {
+    @include form-btn;
+    color: $primary-color;
+  }
+
+  span {
+    margin: 20px 0;
+    &::before,
+    &::after {
+      content: " ------------- ";
+      color: $hl-color;
+    }
+  }
+
+  .signin-success {
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      b {
+        color: $hl-color;
+      }
+    }
+
+    div {
+      @include flex-row-center;
+      align-items: center;
+      margin-bottom: 20px;
+
+      a {
+        margin-left: 10px;
+        font-size: 18px;
+        color: $text-color;
+      }
+
+      &:hover {
+        a {
+          color: $hl-color;
+        }
+      }
+    }
+  }
+}
+
+.signup {
+  @include page;
+  &__title {
+    @include page-title;
+  }
+
+  &__form {
+    @include flex-colomn;
+  }
+  &__btn {
+    @include form-btn;
+  }
+}
+
+/******************************************PROFILE******************************************/
+.profile {
+  @include page;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    span {
+      color: $hl-color;
+    }
+  }
+
+  div {
+    @include flex-row-center;
+    align-items: center;
+    margin-bottom: 20px;
+    a {
+      margin-left: 10px;
+      font-size: 18px;
+      color: $text-color;
+    }
+    &:hover {
+      a {
+        color: $hl-color;
+      }
+    }
+  }
+}
+
+/******************************************ORDER HISTORY******************************************/
+.orders-history {
+  @include page;
+
+  &__title {
+    @include page-title;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  &__list {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    .history-item {
+      width: 100%;
+      border: 2px solid $hl-color;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      margin-bottom: 20px;
+      h5 {
+        color: $hl-color;
+      }
+      &__dishes {
+        width: 70%;
+        margin-right: 40px;
+      }
+      &__date {
+        width: 30%;
+      }
+    }
+  }
+}

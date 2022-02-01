@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Form, Alert } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import BookTableTime from "../components/BookTableTime";
 
 export default function BookTable() {
@@ -13,6 +13,7 @@ export default function BookTable() {
     setForm(() => {
       return { ...form, [name]: value };
     });
+
     if (form.bookDate) {
       form.bookDate.split("T")[1].split(":")[0] < 17 ||
       form.bookDate.split("T")[1].split(":")[0] > 22
@@ -23,39 +24,32 @@ export default function BookTable() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
     const form2 = event.currentTarget;
-
     if (form2.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
     }
     setValidated(true);
-
-    if (form2.checkValidity() && !errorTime) {
+    if (validated && !errorTime) {
       setTableAccepted(true);
     }
   };
 
   return (
-    <div className="book-table ">
+    <main className="book-table ">
       {!tableAccepted ? (
         <h2 className="book-table__title">Забронировать стол</h2>
       ) : (
         <>
-          <h2 className="book-table__title">Ваша бронь принята</h2>
-          <Alert
-            show={tableAccepted}
-            className="mt-3 book-success col-11	col-sm-5	col-md-5	col-lg-5"
-          >
-            <span>Количество гостей: {form.name} </span> <br />
-            <span>Тел: {form.tel} </span> <br />
-            <span> День брони: {form.bookDate.replace("T", " в ")}</span> <br />
-            <span>Доп инфо: {form.additionalInfo} </span>
-          </Alert>
+          <div className="book-table-success">
+            <h2>Ваша бронь принята</h2>
+            <p>Количество гостей: {form.name} </p>
+            <p>Тел: {form.tel} </p>
+            <p> День брони: {form.bookDate.replace("T", " в ")}</p>
+            <p>Доп инфо: {form.additionalInfo} </p>
+          </div>
         </>
       )}
-
       <Form
         className="book-table__form"
         noValidate
@@ -63,7 +57,7 @@ export default function BookTable() {
         onSubmit={handleSubmit}
         hidden={tableAccepted}
       >
-        <Form.Group className="mb-3 col-10 col-sm-6	col-md-6 col-lg-4">
+        <Form.Group className="mb-3">
           <Form.Label>Ваше имя</Form.Label>
           <Form.Control
             required
@@ -76,7 +70,7 @@ export default function BookTable() {
           </Form.Control.Feedback>
         </Form.Group>
 
-        <Form.Group className="mb-3 col-10 col-sm-6	col-md-6 col-lg-4">
+        <Form.Group className="mb-3">
           <Form.Label> Ваш номер телефона</Form.Label>
           <Form.Control
             type="tel"
@@ -91,7 +85,9 @@ export default function BookTable() {
           </Form.Control.Feedback>
         </Form.Group>
 
-        <Form.Group className="mb-3 col-10 col-sm-6	col-md-6 col-lg-4">
+        <BookTableTime errorTime={errorTime} handleChange={handleChange} />
+
+        <Form.Group className="mb-3">
           <Form.Label>Количество гостей</Form.Label>
           <Form.Control
             required
@@ -104,9 +100,7 @@ export default function BookTable() {
           </Form.Control.Feedback>
         </Form.Group>
 
-        <BookTableTime errorTime={errorTime} handleChange={handleChange} />
-
-        <Form.Group className="mb-3 col-10 col-sm-6	col-md-6 col-lg-4">
+        <Form.Group className="mb-3">
           <Form.Label>Доп информация</Form.Label>
           <Form.Control
             as="textarea"
@@ -120,6 +114,6 @@ export default function BookTable() {
           Забронировать
         </button>
       </Form>
-    </div>
+    </main>
   );
 }

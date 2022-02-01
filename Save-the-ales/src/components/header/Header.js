@@ -19,16 +19,15 @@ export default function Header() {
           overlay={<Tooltip id="tooltip-bottom">На главную</Tooltip>}
         >
           <Link className="header-logo" to={`/`}>
-            <h2>Savetheales</h2>
+            <h1>Savetheales</h1>
           </Link>
         </OverlayTrigger>
-
         <nav className="header-menu">
           <HeaderMenu />
         </nav>
 
         <div className="header-icons">
-          <div className="header-icons__cart">
+          <div className="header-icons__header-cart header-cart">
             <Link to={`/cart`}>
               <OverlayTrigger
                 key="bottom"
@@ -47,35 +46,39 @@ export default function Header() {
               <span className="header-cart__quantity">{dishes.length}</span>
             )}
           </div>
-          {loggedIn ? (
-            <Link to={`/profile`}>
-              <OverlayTrigger
-                key="bottom"
-                placement="bottom"
-                overlay={<Tooltip id="tooltip-bottom">Мой профиль</Tooltip>}
-              >
-                <PersonFill
-                  className="header-icons__profile"
-                  size={30}
-                  color="black"
-                />
-              </OverlayTrigger>
-            </Link>
-          ) : (
-            <Link to={`/signin`}>
-              <OverlayTrigger
-                key="bottom"
-                placement="bottom"
-                overlay={<Tooltip id="tooltip-bottom">Войти в аккаунт</Tooltip>}
-              >
-                <PersonFill
-                  className="header-icons__profile"
-                  size={30}
-                  color="black"
-                />
-              </OverlayTrigger>
-            </Link>
-          )}
+          <div className="header-icons__header-profile header-profile ">
+            {loggedIn ? (
+              <Link to={`/profile`}>
+                <OverlayTrigger
+                  key="bottom"
+                  placement="bottom"
+                  overlay={<Tooltip id="tooltip-bottom">Мой профиль</Tooltip>}
+                >
+                  <PersonFill
+                    className="header-profile__icon"
+                    size={30}
+                    color="black"
+                  />
+                </OverlayTrigger>
+              </Link>
+            ) : (
+              <Link to={`/signin`}>
+                <OverlayTrigger
+                  key="bottom"
+                  placement="bottom"
+                  overlay={
+                    <Tooltip id="tooltip-bottom">Войти в аккаунт</Tooltip>
+                  }
+                >
+                  <PersonFill
+                    className="header-profile__icon"
+                    size={30}
+                    color="black"
+                  />
+                </OverlayTrigger>
+              </Link>
+            )}
+          </div>
         </div>
       </header>
     </>

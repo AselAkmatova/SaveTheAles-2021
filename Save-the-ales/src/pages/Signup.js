@@ -34,7 +34,7 @@ export default function Signup() {
   };
 
   return (
-    <div className="signup">
+    <main className="signup">
       <h2 className="signup__title">Регистрация</h2>
 
       {signedUp ? (
@@ -92,6 +92,6 @@ export default function Signup() {
           </button>
         </Form>
       )}
-    </div>
+    </main>
   );
 }

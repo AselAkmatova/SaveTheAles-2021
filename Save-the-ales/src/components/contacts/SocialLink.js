@@ -9,27 +9,25 @@ export default function SocialLinks() {
 
   return (
     <>
-      <div className="contacts__social-links social-links">
-        <h4 className="social-links__title">
-          Следите за нами в социальных сетях
-        </h4>
-        <nav className="social-links__icons">
+      <div className="contacts__social social">
+        <h4 className="social__title">Следите за нами в социальных сетях</h4>
+        <nav className="social__icons">
           <a
             target="_blank"
             rel="noreferrer"
             href="https://www.facebook.com/savetheales"
           >
-            <Facebook color="#ffbd14" size={30} />
+            <Facebook color="#fafdf6" size={30} />
           </a>
           <a target="_blank" rel="noreferrer" href={instagram}>
-            <Instagram color="#ffbd14" size={30} />
+            <Instagram color="#fafdf6" size={30} />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
             href={`https://wa.me/${whatsapp}`}
           >
-            <Whatsapp color="#ffbd14" size={30} />
+            <Whatsapp color="#fafdf6" size={30} />
           </a>
         </nav>
       </div>

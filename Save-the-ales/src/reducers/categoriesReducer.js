@@ -1,8 +1,4 @@
-import {
-  CATEGORIES_FETCH_START,
-  SET_CATEGORIES,
-  CATEGORIES_FETCH_END,
-} from '../actions/types';
+import { SET_CATEGORIES } from "../actions/types";
 
 const initialState = {
   categories: [],
@@ -15,18 +11,6 @@ export default function categoriesReducer(state = initialState, action) {
       return {
         ...state,
         categories: action.payload,
-        loading: false,
-      };
-
-    case CATEGORIES_FETCH_START:
-      return {
-        ...state,
-        loading: true,
-      };
-
-    case CATEGORIES_FETCH_END:
-      return {
-        ...state,
         loading: false,
       };
 

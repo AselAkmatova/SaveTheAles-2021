@@ -1,10 +1,6 @@
-import { SET_ORDERS, ORDERS_FETCH_START, ORDERS_FETCH_END } from "./types";
+import { SET_ORDERS } from "./types";
 
 export const fetchOrders = (token) => (dispatch) => {
-  dispatch({
-    type: ORDERS_FETCH_START,
-  });
-
   fetch(`https://save-the-ales.herokuapp.com/order/detail/${token}`)
     .then((r) => r.json())
     .then((data) =>
@@ -13,8 +9,4 @@ export const fetchOrders = (token) => (dispatch) => {
         payload: data,
       })
     );
-
-  dispatch({
-    type: ORDERS_FETCH_END,
-  });
 };

@@ -15,12 +15,16 @@ export default function Profile() {
       <h2>
         Добро пожаловать <span> {user.data.username} </span>
       </h2>
-      <Link to={`/profile/orderhistory`}>
-        <ListUl size={25} color="white" /> История заказов
-      </Link>
-      <Link to={`/`} onClick={() => logout()}>
-        <BoxArrowRight size={25} color="white" /> Выйти
-      </Link>
+      <div>
+        <ListUl size={25} color="white" />
+        <Link to={`/profile/orderhistory`}>История заказов</Link>
+      </div>
+      <div>
+        <BoxArrowRight size={25} color="white" />
+        <Link to={`/`} onClick={() => logout()}>
+          Выйти
+        </Link>
+      </div>
     </div>
   );
 }

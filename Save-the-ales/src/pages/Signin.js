@@ -34,18 +34,20 @@ export default function Signin() {
   };
 
   return (
-    <div className="signin ">
+    <main className="signin ">
       {loggedIn ? (
         <div className="signin-success">
           <h2>
             Вы успешно авторизовались как <b>{user.data.username}</b>
           </h2>
-          <Link to={`/profile`}>
-            <PersonSquare size={22} color="white" /> Перейти в профиль
-          </Link>
-          <Link to={`/dishes`}>
-            <BagPlus size={25} color="white" /> Cделать заказ
-          </Link>
+          <div>
+            <PersonSquare size={22} color="white" />{" "}
+            <Link to={`/profile`}>Перейти в профиль</Link>
+          </div>
+          <div>
+            <BagPlus size={25} color="white" />
+            <Link to={`/dishes`}>Cделать заказ</Link>{" "}
+          </div>
         </div>
       ) : (
         <div>
@@ -92,14 +94,14 @@ export default function Signin() {
             </Form.Group>
             <button type="submit" className="signin__btn">
               Войти
-            </button>{" "}
+            </button>
             <span>или </span>
-            <Link className="signup__btn" to={`/signup`}>
+            <Link className="signin__btn" to={`/signup`}>
               Зарегистрироваться
             </Link>
           </Form>
         </div>
       )}
-    </div>
+    </main>
   );
 }

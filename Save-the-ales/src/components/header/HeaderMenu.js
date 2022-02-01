@@ -3,34 +3,44 @@ import { Link } from "react-router-dom";
 export default function HeaderMenu({ handleLinkClick }) {
   return (
     <>
-      <Link
-        onClick={handleLinkClick}
-        className="header-menu__link"
-        to={`/about`}
-      >
-        О нас
-      </Link>
-      <Link
-        onClick={handleLinkClick}
-        className="header-menu__link"
-        to={`/dishes`}
-      >
-        Меню
-      </Link>
-      <Link
-        onClick={handleLinkClick}
-        className="header-menu__link"
-        to={`/book`}
-      >
-        Забронировать стол
-      </Link>
-      <Link
-        onClick={handleLinkClick}
-        className="header-menu__link"
-        to={`/contacts`}
-      >
-        Контакты
-      </Link>
+      <ul className="header-menu__list">
+        <li>
+          <Link
+            className="header-menu__link"
+            onClick={handleLinkClick}
+            to={`/about`}
+          >
+            О нас
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="header-menu__link"
+            onClick={handleLinkClick}
+            to={`/dishes`}
+          >
+            Меню
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="header-menu__link"
+            onClick={handleLinkClick}
+            to={`/book`}
+          >
+            Бронь столов
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="header-menu__link"
+            onClick={handleLinkClick}
+            to={`/contacts`}
+          >
+            Контакты
+          </Link>
+        </li>
+      </ul>
     </>
   );
 }

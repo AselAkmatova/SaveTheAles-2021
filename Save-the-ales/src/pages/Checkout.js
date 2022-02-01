@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CheckoutAlertSuccess from "../components/checkout/CheckoutAlertSuccess";
+import CheckoutSuccess from "../components/checkout/CheckoutSuccess";
 import { Form, Alert } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import CheckoutTime from "../components/checkout/CheckoutTime";
@@ -13,10 +13,10 @@ export default function Checkout() {
   let dishes = useSelector((state) => state.cart.dishes);
   let token = useSelector((state) => state.user.user.token);
   const [errorTime, setErrorTime] = useState(false);
-  let totalPrice =
-    dishes.reduce((acc, dish) => {
-      return acc + dish.quantity * dish.price;
-    }, 0) + 200;
+  let dishesPrice = dishes.reduce((acc, dish) => {
+    return acc + dish.quantity * dish.price;
+  }, 0);
+  let totalPrice = dishesPrice + 200;
 
   let dispatch = useDispatch();
 
@@ -43,15 +43,12 @@ export default function Checkout() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
     const form2 = event.currentTarget;
-
     if (form2.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
     }
     setValidated(true);
-
     if (form2.checkValidity() && !errorTime) {
       setOrderAccepted(true);
       dispatch(fetchCheckout(form));
@@ -61,9 +58,7 @@ export default function Checkout() {
   return (
     <main className="checkout ">
       {!orderAccepted && <CheckoutTop />}
-      {orderAccepted && (
-        <CheckoutAlertSuccess orderAccepted={orderAccepted} form={form} />
-      )}
+      {orderAccepted && <CheckoutSuccess form={form} />}
       {!orderAccepted && (
         <Form
           className="cheackout__form"
@@ -128,11 +123,7 @@ export default function Checkout() {
           </div>
           <div className="checkout-form-bottom">
             <div>
-              {dishes.map((dish) => (
-                <small key={dish.id}>
-                  {dish.name} : {dish.price} сом * {dish.quantity} п.
-                </small>
-              ))}
+              <p> Сумма блюд: {dishesPrice} сом</p>
               <p>Доставка: 200 сом</p>
               <p> Общая сумма заказа : {totalPrice} сом</p>
             </div>

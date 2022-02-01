@@ -14,21 +14,17 @@ export default function Cart() {
           <div className="cart__cart-top cart-top">
             <CartTopText />
             <nav className="cart-top__order-nav order-nav">
-              <button className="order-nav__btn">
-                <Link className="order-nav__link" to={`/dishes`}>
-                  Вернуться в меню
-                </Link>
-              </button>
-              <span className="order-nav__line">-----------------------</span>
-              <button className="order-nav__btn" disabled>
+              <Link className="order-nav__link" to={`/dishes`}>
+                Вернуться в меню
+              </Link>
+              <span className="order-nav__line">---------------------</span>
+              <button className="order-nav__link" disabled>
                 Корзина
               </button>
-              <span className="order-nav__line">-----------------------</span>
-              <button className="order-nav__btn">
-                <Link className="order-nav__link" to={`/checkout`}>
-                  Оформить заказ
-                </Link>
-              </button>
+              <span className="order-nav__line">---------------------</span>
+              <Link className="order-nav__link" to={`/checkout`}>
+                Оформить заказ
+              </Link>
             </nav>
           </div>
 

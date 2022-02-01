@@ -23,8 +23,11 @@ export default function Dish({ data }) {
           cartDishes.map(
             (i) =>
               i.id === data.id && (
-                <button className="dish-info__btn-selected" disabled>
-                  Добавлен в корзину
+                <button
+                  className="dish-info__btn dish-info__btn_selected"
+                  disabled
+                >
+                  Добавлен
                 </button>
               )
           )}

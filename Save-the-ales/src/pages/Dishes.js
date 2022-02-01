@@ -6,25 +6,26 @@ import { useDispatch, useSelector } from "react-redux";
 import beer from "../images/beer.svg";
 
 export default function Dishes() {
-  let [checked, setChecked] = useState("all");
+  let [clicked, setClicked] = useState("all");
 
   let dispatch = useDispatch();
   let { dishes, loading } = useSelector((state) => state.dishes);
 
   useEffect(() => {
     dispatch(fetchDishes());
-  }, []);
+  }, [dispatch]);
 
   let dishes2 = dishes;
 
-  if (checked !== "all") {
-    dishes2 = dishes.filter((dish) => dish.categoryId === checked);
+  if (clicked !== "all") {
+    dishes2 = dishes.filter((dish) => dish.categoryId === clicked);
   }
 
   return (
     <>
       <main className="menu">
-        <DishesFilter checked={checked} setChecked={setChecked} />
+        <h2 className="menu__title">Меню</h2>
+        <DishesFilter clicked={clicked} setClicked={setClicked} />
 
         <section className="menu__dishes dishes">
           {loading ? (

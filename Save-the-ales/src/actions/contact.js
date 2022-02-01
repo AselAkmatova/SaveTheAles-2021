@@ -1,14 +1,6 @@
-import {
-  SET_CONTACTS,
-  CONTACTS_FETCH_END,
-  CONTACTS_FETCH_START,
-} from "./types";
+import { SET_CONTACTS } from "./types";
 
 export const fetchContacts = () => (dispatch) => {
-  dispatch({
-    type: CONTACTS_FETCH_START,
-  });
-
   fetch("https://save-the-ales.herokuapp.com/contacts")
     .then((r) => r.json())
     .then((data) => {
@@ -17,8 +9,4 @@ export const fetchContacts = () => (dispatch) => {
         payload: data,
       });
     });
-
-  dispatch({
-    type: CONTACTS_FETCH_END,
-  });
 };

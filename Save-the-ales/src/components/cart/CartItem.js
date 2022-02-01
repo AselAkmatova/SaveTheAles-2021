@@ -10,8 +10,6 @@ import {
 export default function CartItem({ dish }) {
   let dispatch = useDispatch();
 
-  // let image = dish.images.map((image) => image.image);
-
   return (
     <div className="cart-list__cart-item cart-item ">
       <img className="cart-item__image" src={dish.img} alt="dish" />
